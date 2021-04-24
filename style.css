@@ -135,6 +135,25 @@ button a {
   padding-block: 30px;
 }
 
+/* Text styling
+-------------------------------------------------- */
+
+.text-row {
+  display: flex;
+}
+
+.text-column {
+  padding-inline: 5%;
+  text-align: justify;
+  flex: 50%;
+}
+
+/* Contact
+-------------------------------------------------- */
+
+.contact-form {
+  background-color: #cecdcd;
+}
 
 /* CUSTOMIZE THE FIXED BUTTON
 -------------------------------------------------- */
@@ -532,7 +551,7 @@ section .section-title {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 9999; /* Sit on top */
+  z-index: 9998; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
@@ -547,7 +566,7 @@ section .section-title {
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
+  width: 90%;
   max-width: 700px;
 }
 
@@ -688,8 +707,9 @@ body{
 	font-weight: lighter;
 	text-shadow:none;
 }
-.gal-container .modal-dialogue{
-	width: 80%;
+.gal-container .modal-dialog{
+	width: 90%;
+  z-index: 9999;
 }
 .gal-container .description{
 	position: relative;
@@ -730,8 +750,7 @@ body{
 
 @media (min-width: 768px) {
 .gal-container .modal-dialog {
-    width: 55%;
-    margin: 50 auto;
+    width: 70%;
 }
 }
 @media (max-width: 768px) {
